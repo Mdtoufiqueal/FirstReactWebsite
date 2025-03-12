@@ -1,0 +1,113 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(45deg, #000 50%, #D0A63E 50%);
+  color: white;
+  padding: 40px 20px 0 20px; /* Added padding only for left, right, and top */
+}
+
+.footer-inner-container {
+  padding: 0 !important; /* Remove padding from inner container */
+}
+
+.footer-section .container {
+  flex: 1;
+}
+
+.footer-section h4, .footer-section h5 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section .text-center {
+  background-color: transparent !important; /* Transparent effect */
+  color: rgb(238, 232, 232);
+  margin-top: auto;
+  padding: 15px;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding: 8px;
+  color: #fff;
+  width: 100%;
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border-bottom: 1px solid #D0A63E;
+}
+
+.submit-btn {
+  background-color: #D0A63E;
+  color: #000;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+.footer-section a {
+  text-decoration: none; /* Removes underline */
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover for better UX */
+  color: #D0A63E; /* Optional: Changes color on hover */
+}
+
+.phone-link {
+  color: #ffffff; /* Initial color */
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: black; /* Color when hovered */
+}
+
+/* Footer Copyright Section */
+.footer-copyright {
+  background: transparent; /* Set background as transparent */
+  padding: 10px 0;
+  color: rgb(238, 232, 232);
+  text-align: center;
+}
+/* 
+@media (max-width: 768px) {
+  .footer-section .row {
+    flex-direction: column;
+  }
+
+  .footer-section .col-lg-3 {
+    margin-bottom: 20px;
+  }
+
+  .subscribe-wrapper {
+    text-align: center;
+  }
+} */

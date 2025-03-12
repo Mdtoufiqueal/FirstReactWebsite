@@ -1,0 +1,132 @@
+/* FloatingButtons.css */
+
+/* Parent container for positioning */
+.floating_buttons_container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column; /* Stack them vertically */
+  align-items: center;
+  gap: 15px; /* Space between the buttons */
+  z-index: 1000;
+}
+
+/* WhatsApp Button */
+.floating_whatsapp_btn {
+  text-decoration: none; /* Remove underlines */
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contact_icon {
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  width: 50px; /* Smaller size */
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 4px #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+  /* Pulse animation applied */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.text_icon {
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Call Button */
+.floating_call_btn {
+  text-decoration: none; /* Remove underlines */
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.call_icon {
+  background-color: #007bff; /* Call button blue */
+  color: #fff;
+  width: 50px; /* Smaller size */
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 4px #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+  /* Pulse animation applied */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Bubble Effect - Pseudo-element for WhatsApp */
+.floating_whatsapp_btn:hover .contact_icon::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: bubble 0.5s ease-out forwards;
+}
+
+/* Bubble Effect - Pseudo-element for Call Button */
+.floating_call_btn:hover .call_icon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: bubble 0.5s ease-out forwards;
+}
+
+/* Bubble Effect Animation */
+@keyframes bubble {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -100px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -200px) scale(1.5);
+    opacity: 0;
+  }
+}

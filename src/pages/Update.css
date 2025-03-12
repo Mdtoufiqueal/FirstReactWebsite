@@ -1,0 +1,53 @@
+/* General container for the schedule page */
+.schedule-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+.schedule-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.schedule-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Table container styling */
+.schedule-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Style table headers */
+.schedule-table th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+/* Style table rows */
+.schedule-table td {
+  padding: 8px;
+  border: 1px solid #555;
+}
+
+/* Add hover effect to rows
+.schedule-table tr:hover {
+  background-color: #ddd;
+} */
+
+/* Note text styles */
+.schedule-container p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}

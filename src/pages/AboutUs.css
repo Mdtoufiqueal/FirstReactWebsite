@@ -1,0 +1,180 @@
+/* Resetting some defaults for the AboutUs component */
+.about-us, .hero-section, .about-info, .gallery-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  .about-us-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section Styling with Custom Gradient */
+  .hero-section {
+    background: linear-gradient(
+      to right,
+      #d8b451, /* Gold on the left */
+      #ae801a, /* Darker gold in the center */
+      #000000, /* Black in the middle */
+      #ae801a, /* Darker gold in the center again */
+      #d3a118 /* Gold on the right */
+    );
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    background-color: #000000;
+    color: #d0a63e;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #d0a63e;
+    color: white;
+  }
+  
+  /* About Information Section */
+  .about-info {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .about-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Gallery Section Styling */
+  .gallery-section {
+    padding: 30px 20px;  /* Reduced padding */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: -10px;  /* Slight negative margin to pull up the section */
+  }
+  
+  .gallery-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Navigation Pills */
+  .nav-pills {
+    justify-content: center;
+  }
+  
+  .nav-pills .nav-link {
+    margin-right: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #d8b451; /* Gold color for active link */
+    color: black;
+  }
+  
+  .nav-pills .nav-link:hover {
+    background-color: #ae801a; /* Darker gold for hover */
+    color: white;
+  }
+  
+  /* Gallery Grid Layout */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+  }
+  
+  .gallery-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .gallery-item p {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 0 0 8px 8px;
+    margin: 0;
+    color: #333;
+  }
+  /* Color Theme Customization */
+.text-gold {
+    color: #d8b451; /* Gold color matching your theme */
+  }
+  
+  .btn-gold {
+    background-color: #d8b451;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gold:hover {
+    background-color: #ae801a; /* Darker gold */
+    color: #fff;
+  }
+  
+  /* Responsive Section Padding */
+  .about-info {
+    text-align: center;
+    padding: 40px 20px;  /* Reduced padding */
+    margin-bottom: 20px; /* Reduced margin bottom */
+  }
+  
+  .about-info .container {
+    padding: 20px;
+  }
+  
+  .text-muted {
+    color: #555; /* Softer text color for readability */
+  }
+  
