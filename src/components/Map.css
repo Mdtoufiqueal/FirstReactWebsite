@@ -1,0 +1,15 @@
+.contact-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-section {
+  padding: 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
