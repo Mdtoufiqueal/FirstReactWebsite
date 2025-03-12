@@ -21,7 +21,7 @@ function App() {
       // <HeroSection/>
       // <Combined/>
       // <Login/>
-    <Router>  
+    <Router basename="/FirstReactWebsite">  
       <Routes>
         {/* <Route path="/Login" element={<LandingPage/>} /> */}
         <Route path="/" element={<Combined/>} />
